@@ -1,0 +1,8 @@
+services:
+  - type: static_site
+    name: xlit-timesheet-portal
+    buildCommand: npm install --include=dev && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_ENV
+        value: production
